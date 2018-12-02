@@ -1,0 +1,182 @@
+/*Good old css reset */
+	/* NOTES 
+	-all animations start at 0px because it only references the div, no the entire page
+	*/
+* { 
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	}
+body{
+	background-color: #E3E5E5;
+ 	margin:0;
+  	padding:0;
+}
+.wrapper{
+	font-family: 'Raleway', sans-serif;
+}
+#titleHeader1stHalf{
+	height: 70px;
+	width: 55%;
+	float:left;
+	background-color: #E3E5E5;
+	font-family: 'Raleway', sans-serif;
+}
+#titleHeader2ndHalf{
+	height: 70px;
+	width: 20%;
+	float:left;
+	background-color: #E8EAEA;
+	font-family: 'Raleway', sans-serif;
+	border-radius:5px;
+}
+#titleHeader3rdHalf{
+	height: 70px;
+	width: 25%;
+	float:left;
+	background-color: #EFF2F2;
+	font-family: 'Raleway', sans-serif;
+	border-radius:5px;
+}
+.wrapper a{
+	text-decoration: none;
+}
+#title1{
+	color: #2E4052;
+	font-size:35px;
+	font-weight: 700;
+	vertical-align: middle;
+	line-height: 0x; 
+	margin:0;
+    padding:10px 0 0 100px;  
+}
+#title2{
+	color: #2E4052;
+	font-size:35px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 0x; 
+	margin:0;
+    padding:10px 0 0 0px;  
+}
+#title3{
+	color: #2E4052;
+	font-size:35px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 0x; 
+	margin:0;
+    padding:10px 0 0 0px; 
+}
+	
+	/* Slide In Div */
+/* MHS App fade */
+#floattext h1 {
+    text-align: center;
+	color: #2E4052;
+	font-size:30px;
+	vertical-align: middle;
+	text-align: center; 
+	margin:0;
+    padding:10px 10px 0 0px; 
+	font-family: 'Raleway', sans-serif;
+}
+#floattext {
+    position: relative;
+    -webkit-animation: floatBubbleText 2s  normal forwards ease-out;
+    animation: floatBubbleText 2s  normal forwards ease-out;
+}
+@-webkit-keyframes floatBubbleText {
+    0% {
+     opacity: 0;
+     transform: translate3d(0px, 0px, 0px);     
+    }
+    100% {
+     opacity: 1; 
+     transform: translate3d(0px, 50px, 0px);
+    }
+}
+@keyframes floatBubbleText {
+    0% {
+     opacity: 0;
+     transform: translate3d(0px, 0px, 0px);     
+    }
+    100% {
+     opacity: 1; 
+     transform: translate3d(0px, 50px, 0px);
+    }
+}
+
+/* Desc Slide in */
+#DescLoad h1 {
+    text-align: center;
+	color: #2E4052;
+	font-size:20px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 0x; 
+	margin:0;
+    padding:10px 0 0 0px; 
+	font-family: 'Raleway', sans-serif;
+}
+#DescLoad {
+    position: relative;
+    -webkit-animation: floatBubbleDesc 2s  normal forwards ease-out;
+    animation: floatBubbleDesc 2s  normal forwards ease-out;
+		-webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+    animation-delay: 1s;
+	opacity: 0;
+}
+@-webkit-keyframes floatBubbleDesc {
+    0% {5     opacity: 0;
+     transform: translate3d(0px, 20px, 0px);     
+    }
+    100% {
+     opacity: 1; 
+     transform: translate3d(0px, 50px, 0px);
+    }
+}
+@keyframes floatBubbleDesc {
+    0% {
+     opacity: 0;
+     transform: translate3d(0px, 20px, 0px);     
+    }
+    100% {
+     opacity: 1; 
+     transform: translate3d(0px, 50px, 0px);
+    }
+}
+/*Image fades and moves on load */
+#float {
+    position: relative;
+    float: middle;
+    -webkit-animation: floatBubble 1s  normal forwardsease-out;
+    animation: floatBubble 1s  normal forwards ease-out;
+	-webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-delay: 2s;
+	opacity: 0;
+}
+@-webkit-keyframes floatBubble {
+    0% {
+        transform: translate3d(0px, 100px, 0px);
+		opacity: 0;
+    }
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+		opacity: 1.0;
+    }
+}
+}
+@keyframes floatBubble {
+    0% {
+        transform: translate3d(0px, 100px, 0px);
+		opacity: 0;
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+		opacity: 1.0;
+    }
+}
